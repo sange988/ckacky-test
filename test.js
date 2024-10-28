@@ -53,7 +53,7 @@ const loop = async () => {
 			});
 		}
 	},
-	init = () => {
+	initSnow = () => {
 		for (let i = 0; i < (maxSnowflakes - snowflakes.length) / 2; i++) {
 			generatesnowFlake(Math.random() * 50, true);
 		}
