@@ -973,6 +973,25 @@ body {
     transform: translate(15.74815vw, 100vh) scale(0.7359);
   }
 }
+
+.firework {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ff0, #f00);
+  opacity: 0;
+  animation: explode 1s ease-out forwards;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
 .snow:nth-child(75) {
   opacity: 0.1099;
   transform: translate(47.6472vw, -10px) scale(0.8225);
@@ -2323,6 +2342,24 @@ body {
   }
   to {
     transform: translate(85.7939vw, 100vh) scale(0.9746);
+  }
+}
+
+.firework__particle {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(0,0,0,0) 70%);
+  animation: particle-move 2s ease-out forwards;
+}
+
+@keyframes particle-move {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-200px) scale(0.5);
+    opacity: 0;
   }
 }
 .snow:nth-child(179) {
